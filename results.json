@@ -1,0 +1,154 @@
+[
+  {
+    "task": "priority-classification",
+    "step": 1,
+    "reward": 0.575,
+    "latency": 7.038051128387451,
+    "valid_json": true,
+    "email_id": "pc-002"
+  },
+  {
+    "task": "priority-classification",
+    "step": 2,
+    "reward": 0.895,
+    "latency": 2.398946523666382,
+    "valid_json": true,
+    "email_id": "pc-008"
+  },
+  {
+    "task": "priority-classification",
+    "step": 3,
+    "reward": 0.895,
+    "latency": 2.8612990379333496,
+    "valid_json": true,
+    "email_id": "pc-007"
+  },
+  {
+    "task": "priority-classification",
+    "step": 4,
+    "reward": 0.895,
+    "latency": 2.7410895824432373,
+    "valid_json": true,
+    "email_id": "pc-001"
+  },
+  {
+    "task": "priority-classification",
+    "step": 5,
+    "reward": 1.0,
+    "latency": 2.279362440109253,
+    "valid_json": true,
+    "email_id": "pc-006"
+  },
+  {
+    "task": "priority-classification",
+    "step": 6,
+    "reward": 0.575,
+    "latency": 2.251601219177246,
+    "valid_json": true,
+    "email_id": "pc-004"
+  },
+  {
+    "task": "priority-classification",
+    "step": 7,
+    "reward": 0.5,
+    "latency": 2.946462869644165,
+    "valid_json": true,
+    "email_id": "pc-005"
+  },
+  {
+    "task": "priority-classification",
+    "step": 8,
+    "reward": 0.575,
+    "latency": 2.7017698287963867,
+    "valid_json": true,
+    "email_id": "pc-005"
+  },
+  {
+    "task": "category-routing",
+    "step": 1,
+    "reward": 0.175,
+    "latency": 4.832996129989624,
+    "valid_json": true,
+    "email_id": "cr-004"
+  },
+  {
+    "task": "category-routing",
+    "step": 2,
+    "reward": 0.9,
+    "latency": 4.359976053237915,
+    "valid_json": true,
+    "email_id": "cr-005"
+  },
+  {
+    "task": "category-routing",
+    "step": 3,
+    "reward": 0.6,
+    "latency": 6.411618709564209,
+    "valid_json": true,
+    "email_id": "cr-006"
+  },
+  {
+    "task": "category-routing",
+    "step": 4,
+    "reward": 0.775,
+    "latency": 16.911020755767822,
+    "valid_json": true,
+    "email_id": "cr-003"
+  },
+  {
+    "task": "category-routing",
+    "step": 5,
+    "reward": 0.865,
+    "latency": 4.218118906021118,
+    "valid_json": true,
+    "email_id": "cr-002"
+  },
+  {
+    "task": "category-routing",
+    "step": 6,
+    "reward": 0.6917,
+    "latency": 5.347196817398071,
+    "valid_json": true,
+    "email_id": "cr-002"
+  },
+  {
+    "task": "full-triage-pipeline",
+    "step": 1,
+    "reward": 0.38,
+    "latency": 8.059525728225708,
+    "valid_json": true,
+    "email_id": "ftp-002"
+  },
+  {
+    "task": "full-triage-pipeline",
+    "step": 2,
+    "reward": 0.6357,
+    "latency": 5.894606590270996,
+    "valid_json": true,
+    "email_id": "ftp-001"
+  },
+  {
+    "task": "full-triage-pipeline",
+    "step": 3,
+    "reward": 0.805,
+    "latency": 6.311846017837524,
+    "valid_json": true,
+    "email_id": "ftp-004"
+  },
+  {
+    "task": "full-triage-pipeline",
+    "step": 4,
+    "reward": 0.5125,
+    "latency": 7.332424640655518,
+    "valid_json": true,
+    "email_id": "ftp-005"
+  },
+  {
+    "task": "full-triage-pipeline",
+    "step": 5,
+    "reward": 0.5833,
+    "latency": 11.013994693756104,
+    "valid_json": true,
+    "email_id": "ftp-005"
+  }
+]
