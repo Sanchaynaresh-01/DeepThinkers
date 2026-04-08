@@ -1,0 +1,146 @@
+[
+  {
+    "email_id": "pc-001",
+    "subject": "Server health check warning - disk usage trending up",
+    "sender": "monitoring@infra.company.com",
+    "sender_domain": "company.com",
+    "body": "AUTOMATED ALERT: Disk usage on prod-web-04 has reached 72% capacity. Current growth rate suggests it will hit 90% in approximately 14 days. No services are currently affected. Last cleanup was performed 45 days ago. Recommendation: schedule a maintenance window to archive old logs. This is an informational alert, no immediate action required.",
+    "timestamp": "2024-01-15T14:35:00Z",
+    "thread_length": 1,
+    "has_attachments": false,
+    "ground_truth": {
+      "priority": "medium",
+      "category": "engineering",
+      "route_to": "engineering-oncall",
+      "sla_hours": 24,
+      "sentiment": "neutral",
+      "flags": []
+    }
+  },
+  {
+    "email_id": "pc-002",
+    "subject": "Re: Our contract renewal - a few concerns",
+    "sender": "procurement@midsize-client.com",
+    "sender_domain": "midsize-client.com",
+    "body": "Hi team, we've been a customer for 3 years and generally happy with the service. However, I need to flag some concerns before we renew. Our team has noticed occasional latency spikes, and competitor X is offering a 20% lower price point. We're not looking to leave, but we'd appreciate a conversation about pricing adjustments and an SLA review. Our renewal is due in 6 weeks. Can someone from account management reach out? Thanks, David Chen, IT Director",
+    "timestamp": "2024-01-15T10:12:00Z",
+    "thread_length": 3,
+    "has_attachments": false,
+    "ground_truth": {
+      "priority": "high",
+      "category": "sales",
+      "route_to": "account-management",
+      "sla_hours": 8,
+      "sentiment": "negative",
+      "flags": ["financial"]
+    }
+  },
+  {
+    "email_id": "pc-003",
+    "subject": "Compliance training reminder - Q1 deadline approaching",
+    "sender": "compliance@company.com",
+    "sender_domain": "company.com",
+    "body": "Friendly reminder: All employees must complete the updated data privacy and anti-harassment training modules by January 31st. As of today, 34% of the engineering department has not started. Managers will receive a list of non-compliant team members on January 25th. Failure to complete training by the deadline may result in temporary access restrictions per company policy HR-2024-003. Please complete at your earliest convenience.",
+    "timestamp": "2024-01-15T09:00:00Z",
+    "thread_length": 1,
+    "has_attachments": false,
+    "ground_truth": {
+      "priority": "medium",
+      "category": "hr",
+      "route_to": "internal",
+      "sla_hours": 24,
+      "sentiment": "neutral",
+      "flags": []
+    }
+  },
+  {
+    "email_id": "pc-004",
+    "subject": "Feature request from pilot customer - login with SSO",
+    "sender": "success@company.com",
+    "sender_domain": "company.com",
+    "body": "Hey product team, our pilot customer FinanceFirst (ARR potential: $180K) is asking about SSO integration via SAML 2.0. They said it's a blocker for their security team to approve the rollout beyond their pilot group of 50 users. Their CISO mentioned they'd need this within the next quarter to proceed. Not urgent but important for the deal. Can we get a timeline estimate from engineering? Thanks, Lisa - Customer Success",
+    "timestamp": "2024-01-15T11:30:00Z",
+    "thread_length": 2,
+    "has_attachments": false,
+    "ground_truth": {
+      "priority": "medium",
+      "category": "engineering",
+      "route_to": "product-engineering",
+      "sla_hours": 48,
+      "sentiment": "positive",
+      "flags": []
+    }
+  },
+  {
+    "email_id": "pc-005",
+    "subject": "Unusual login activity on service account",
+    "sender": "security-alerts@company.com",
+    "sender_domain": "company.com",
+    "body": "Security Notice: Service account 'deploy-bot' was accessed from IP 45.33.xx.xx (Linode, US) at 02:14 UTC. This IP is not in the allowlist but matches a known CI/CD provider range. The account performed 3 read-only API calls to the staging environment before the session expired. No write operations were detected. Risk assessment: LOW-MEDIUM. This may be a misconfigured CI pipeline. Please verify with the DevOps team when convenient.",
+    "timestamp": "2024-01-15T06:20:00Z",
+    "thread_length": 1,
+    "has_attachments": false,
+    "ground_truth": {
+      "priority": "high",
+      "category": "engineering",
+      "route_to": "security-team",
+      "sla_hours": 8,
+      "sentiment": "neutral",
+      "flags": ["escalate"]
+    }
+  },
+  {
+    "email_id": "pc-006",
+    "subject": "Quick question about API documentation",
+    "sender": "dev@smallstartup.io",
+    "sender_domain": "smallstartup.io",
+    "body": "Hi there, I'm building an integration with your platform and the API docs seem outdated. The /v2/users endpoint returns fields not listed in the documentation, and the rate limit headers don't match what's described. I've been working around it but wanted to flag it. No rush, just wanted to make sure you're aware. Also, love the product overall! Cheers, Sam",
+    "timestamp": "2024-01-15T13:45:00Z",
+    "thread_length": 1,
+    "has_attachments": false,
+    "ground_truth": {
+      "priority": "low",
+      "category": "support",
+      "route_to": "developer-support",
+      "sla_hours": 72,
+      "sentiment": "positive",
+      "flags": []
+    }
+  },
+  {
+    "email_id": "pc-007",
+    "subject": "Vendor price increase effective March 1st",
+    "sender": "billing@cloudprovider.com",
+    "sender_domain": "cloudprovider.com",
+    "body": "Dear Customer, we are writing to inform you that effective March 1, 2024, our pricing will be adjusted. Your current plan (Enterprise Tier) will increase from $12,500/mo to $14,200/mo, reflecting a 13.6% adjustment. This change reflects infrastructure cost increases. You have until February 15th to lock in current pricing with a 12-month commitment. Please contact your account representative to discuss options. We value your partnership.",
+    "timestamp": "2024-01-15T08:00:00Z",
+    "thread_length": 1,
+    "has_attachments": true,
+    "ground_truth": {
+      "priority": "high",
+      "category": "billing",
+      "route_to": "finance-billing",
+      "sla_hours": 8,
+      "sentiment": "negative",
+      "flags": ["financial"]
+    }
+  },
+  {
+    "email_id": "pc-008",
+    "subject": "Re: Resolved - Ticket #4471 login issue",
+    "sender": "user@enterprise-customer.com",
+    "sender_domain": "enterprise-customer.com",
+    "body": "Thanks for fixing the login issue. It's working now. However, I wanted to mention that this is the third time in two months we've had auth problems. Our team is getting frustrated and my manager asked me to escalate if it happens again. For now we're good, but I'd appreciate it if someone could look into the root cause. Otherwise we might need to evaluate alternatives. Regards, Priya Sharma, Senior Analyst",
+    "timestamp": "2024-01-15T07:15:00Z",
+    "thread_length": 5,
+    "has_attachments": false,
+    "ground_truth": {
+      "priority": "medium",
+      "category": "support",
+      "route_to": "technical-support",
+      "sla_hours": 24,
+      "sentiment": "negative",
+      "flags": []
+    }
+  }
+]
